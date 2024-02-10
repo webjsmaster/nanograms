@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  background: url("./src/assets/background2.jpg") 0 0 no-repeat;
+}
+
+body.dark {
+  background: url("./src/assets/background.jpg") 0 0 no-repeat;
+}
+
+.dark {
+  .container-canvas {
+    box-shadow: 0 0 30px 10px #000;
+  }
+
+  .button {
+    background-color: rgba(#2D3134, 0.5);
+  }
+
+  .button:hover {
+    background-color: #26cddd;
+  }
+
+  .timer {
+    color: #26cddd;
+  }
+
+
+  .dropdown-inner {
+    border-color: #26cddd;
+    background-color: inherit;
+
+
+    svg {
+      width: 16px;
+      height: 16px;
+      pointer-events: none;
+      transition: all 0.3s ease 0s;
+
+      g {
+        path {
+          fill: #26cddd;
+        }
+      }
+    }
+
+  }
+
+  .dropdown-input {
+    color: #26cddd;
+  }
+
+  .game-field {
+    background-color: white;
+  }
+}
+
+

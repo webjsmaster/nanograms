@@ -1,0 +1,31 @@
+.button {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(126, 204, 235, 0.5);
+  color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid #26cddd;
+  transition: all 0.3s ease 0s;
+  max-width: 250px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: rgba(126, 204, 235, 1);
+  color: #F27922;
+  transition: all 0.3s ease 0s;
+}
+
+.button:active {
+  transform: scale(0.90);
+  transition: transform 0.1s ease 0s;
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 18px;
+  }
+}

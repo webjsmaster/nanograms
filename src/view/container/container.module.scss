@@ -1,0 +1,32 @@
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  display: block;
+  box-shadow: 0 0 20px 5px #fff;
+
+}
+
+.gameField {
+  background-color: grey;
+
+  display: grid;
+  grid-template-columns: auto auto;
+
+
+  canvas:first-child {
+    // grid-area: first;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+  }
+
+  canvas:nth-child(2) {
+    // grid-area: second;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  canvas:nth-child(3) {
+    // grid-area: third;
+  }
+}

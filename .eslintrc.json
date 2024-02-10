@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  //  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 13
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "import/no-extraneous-dependencies": "off",
+    "no-constructor-return": "off",
+    "no-plusplus": "off",
+    "no-console": "warn",
+    "no-new": "off",
+    "consistent-return": "off",
+    "import/no-cycle": "off",
+    "lines-between-class-members": "off",
+    "object-property-newline": "error",
+    "array-callback-return": "off",
+    "object-curly-newline": "off",
+    "no-unused-expressions": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 250
+      }
+    ],
+    "indent": [
+      "warn",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "class-methods-use-this": "off",
+    "import/extensions": "off"
+  }
+}

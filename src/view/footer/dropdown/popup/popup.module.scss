@@ -1,0 +1,87 @@
+.popup {
+  position: absolute;
+  left: 0;
+  top: 99%;
+  z-index: 1;
+
+  padding: 10px;
+  max-width: 100%;
+  width: 100%;
+
+  display: none;
+
+  border-radius: 0px 0px 6px 6px;
+
+  background-color: wheat;
+  border: 1px solid gray;
+
+}
+
+.active {
+  display: block;
+  border-top: none;
+}
+
+.menu {
+  overflow: auto;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 150px;
+}
+
+.menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.menu::-webkit-scrollbar-track {
+  background: #2D3134;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #26cddd;
+  border-radius: 2px;
+}
+
+.item {
+  text-align: left;
+  padding: 5px 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: black;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  transition: background-color 220ms ease-in-out,
+  color 220ms ease-in-out;
+
+  &:hover {
+    color: wheat;
+    background-color: #26cddd;
+  }
+
+  &:active {
+    background-color: #26cddd;
+    scale: 0.97;
+  }
+
+  .title {
+    text-align: start;
+    flex-grow: 1;
+    text-transform: uppercase;
+  }
+
+  .poster {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
